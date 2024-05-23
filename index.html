@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="view-schedule" class="view active">
+      <h1>To-Do List</h1>
+      <ul id="task-list"></ul>
+      <button id="done-button">Done</button>
+      <button id="create-button">Create New Task</button>
+    </div>
+    <div id="create-schedule" class="view">
+      <h1>Create Task</h1>
+      <form id="task-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" required><br>
+        <label for="start-day">Start Day:</label>
+        <input type="date" id="start-day" required><br>
+        <label for="end-day">End Day:</label>
+        <input type="date" id="end-day" required><br>
+        <label for="start-time">Start Time:</label>
+        <input type="time" id="start-time" required><br>
+        <label for="end-time">End Time:</label>
+        <input type="time" id="end-time" required><br>
+        <button type="submit">Create</button>
+      </form>
+      <button id="back-button">Back</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
